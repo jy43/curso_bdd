@@ -6,5 +6,12 @@ export default {
             .get('#top_header')
         cy.get('.fa-user')
             .click()
-    }
+    },
+    accessRegister(){
+        cy.visit('/')
+            .get('#top_header')
+        cy.get('.fa-lock')
+            .click()
+    },
+    
 }
